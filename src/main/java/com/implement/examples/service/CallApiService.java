@@ -70,7 +70,7 @@ public class CallApiService {
 
 	    // Use thenAccept to process the results once they are available
 	    future1.thenAccept(result -> System.err.println(result + "======s1====="));
-	    future2.thenAccept(result -> System.err.println(result + "==+++++++===s2==+++++++++++=="));
+	    future2.thenAccept(result -> System.err.println(result + "==+++++++====s2====+++++++++++=="));
 	    Thread.sleep(12000);
 	    System.err.println("key1 --- >"+cacheConfig.get("key1") + "   key2 ------> " + cacheConfig.get("key2")+ "    key3------->  "+ cacheConfig.get("key3"));
 	    // Wait for all futures to complete
